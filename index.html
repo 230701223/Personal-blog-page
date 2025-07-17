@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    nav {
+      background: #0d1b2a;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      color: #fff;
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f0a500;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 5rem 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .section-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .section-img img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .section-content {
+      flex: 2;
+      padding-left: 5%;
+      text-align: right;
+    }
+
+    .section-content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .section-content p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    #about { background: #fef9ef; }
+    #skills { background: #e8f6ef; }
+    #journey { background: #f9e5e5; }
+    #contact { background: #eef2f3; justify-content: center; flex-direction: column; }
+
+    footer {
+      background: #0d1b2a;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 600px;
+      margin-top: 2rem;
+    }
+
+    form input,
+    form textarea {
+      padding: 1.2rem;
+      margin: 0.7rem 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      width: 100%;
+    }
+
+    form textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    form button {
+      padding: 1rem;
+      margin-top: 1rem;
+      background-color: #0d1b2a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      font-size: 1.1rem;
+    }
+
+    form button:hover {
+      background-color: #f0a500;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>My Blog</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <div class="section-img" data-aos="fade-right">
+      <img src="my prfile pic.jpeg" alt="About Me">
+    </div>
+    <div class="section-content" data-aos="fade-left">
+      <div class="icon"><i class="fas fa-user"></i></div>
+      <h2>About Me</h2>
+      <p>Hello! I’m Padmasri, daughter of Sabapathi, currently pursuing my pre-final year at REC. I'm an enthusiastic web developer with a keen interest in cutting-edge technologies. My curiosity extends to areas such as Machine Learning, Deep Learning, and Artificial Intelligence. I am constantly learning and passionate about building user-friendly digital experiences.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-img" data-aos="fade-right">
+      <img src="skill pic.jpeg" alt="Skills">
+    </div>
+    <div class="section-content" data-aos="fade-left">
+      <div class="icon"><i class="fas fa-code"></i></div>
+      <h2>Skills</h2>
+      <p>Over the years, I’ve built a strong foundation in web development, with hands-on experience in HTML, CSS, JavaScript, and frameworks like React. I’m also familiar with backend technologies such as Node.js and database tools like MongoDB. My curiosity drives me to continuously explore new tech stacks and improve my problem-solving abilities. In addition, my interest in Machine Learning, Deep Learning, and AI has led me to experiment with tools like Python, TensorFlow, and scikit-learn, helping me develop a versatile and adaptable skill set for both frontend and backend development.</p>
+    </div>
+  </section>
+
+  <section id="journey">
+    <div class="section-img" data-aos="fade-right">
+      <img src="tech journey.jpeg" alt="Journey">
+    </div>
+    <div class="section-content" data-aos="fade-left">
+      <div class="icon"><i class="fas fa-road"></i></div>
+      <h2>Journey</h2>
+      <p>My journey into technology began with a deep curiosity and passion for learning. Over time, I’ve built a strong foundation in web development, explored the fascinating world of artificial intelligence, and continuously sought opportunities to grow. From designing interactive websites to experimenting with machine learning models, each step has shaped my technical abilities and broadened my perspective on the impact of technology. A significant milestone in this journey was securing First Place in the InSolutions DTI competition hosted by Alpha College, which validated my problem-solving skills and innovative thinking in a competitive, real-world scenario.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-content" data-aos="fade-up" style="text-align: center;">
+      <div class="icon"><i class="fas fa-envelope"></i></div>
+      <h2>Contact Me</h2>
+      <p>If you have any questions, collaborations, or just want to say hello, feel free to drop a message below!</p>
+      <form>
+        <input type="text" placeholder="Your Full Name" required>
+        <input type="email" placeholder="Your Email Address" required>
+        <input type="tel" placeholder="Your Phone Number (Optional)">
+        <textarea placeholder="Write your message here..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>© 2025 My Blog. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
